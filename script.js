@@ -142,3 +142,19 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSlider('slider1', { autoplay: true, interval: 3500 });
     initializeSlider('slider2', { autoplay: true, interval: 4000 });
 });
+
+
+
+
+
+
+// --- Function to toggle the mobile navigation menu ---
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-container-link');
+    navLinks.classList.toggle('show');
+}
+
+// Dynamically set the copyright year
+const copyright_p = document.getElementById("copyright");
+copyright_p.innerHTML = `Copyright © ${new Date().getFullYear()} Bhatu Jay All rights reserved`;
+

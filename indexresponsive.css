@@ -1,10 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/batman-forever');
 
+/* === BASE STYLES === */
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
+    scroll-behavior: smooth; /* Added for smooth scrolling */
 }
 
 .main-container-color {
@@ -12,33 +14,28 @@ body {
 }
 
 .main-container-width {
-    width: 1200px;
+    max-width: 1200px; /* Changed from width to max-width */
+    width: 90%;       /* Use percentage for flexibility */
     margin: auto;
 }
 
+/* === NAVIGATION === */
 .nav-container {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.2);
-    /* transparent white */
-    backdrop-filter: blur(10px);
-    /* blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    /* subtle border */
     width: 100%;
-    /* background: #fff; */
-    /* match your site background */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 1000;
-    /* keeps it above other elements */
-    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
-    /* optional shadow */
     display: flex;
     height: 84px;
     align-items: center;
     justify-content: space-around;
+    padding: 0 5%; /* Add padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 .jblogo-nav {
@@ -47,29 +44,16 @@ body {
     font-family: BatmanForeverAlternate;
 }
 
-#Home {
-    scroll-margin-top: calc(-50px);
-    /* Adjust the value to your needs */
+/* Scroll margin for anchor links */
+#Home, #About_Me, #Skills, #Projects, #Contact {
+    scroll-margin-top: 100px; 
 }
 
-#About_Me {
-    scroll-margin-top: calc(80px);
-    /* Adjust the value to your needs */
-}
-
-#Skills {
-    scroll-margin-top: calc(200px);
-    /* Adjust the value to your needs */
-}
-
-#Projects {
-    scroll-margin-top: calc(80px);
-    /* Adjust the value to your needs */
-}
-
-#Contact {
-    scroll-margin-top: calc(170px);
-    /* Adjust the value to your needs */
+.nav-container-link {
+    display: flex; /* Changed from default */
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 ul a {
@@ -77,16 +61,6 @@ ul a {
     margin: 0 20px;
     text-decoration: none;
     cursor: pointer;
-}
-
-.nav-container-btn1 {
-    cursor: pointer;
-    color: green;
-    border: none;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #F5F7FA;
 }
 
 .nav-container-btn2 {
@@ -97,6 +71,39 @@ ul a {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #4CAF4F;
+}
+
+.hamburger {
+    display: none; /* Hide by default on desktop */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* === HERO SECTION (HOME) === */
+.main-container-body {
+    display: flex;
+    margin: auto;
+    padding-top: 90px; /* Adjusted padding */
+    min-height: calc(100vh - 90px); /* Use min-height for flexibility */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.main-container-forh1 {
+    font-size: 64px;
+    max-width: 657px;
+    margin: 0;
+}
+
+.main-container-secondh1 {
+    color: #4CAF4F;
+    display: block; /* Ensures it goes to the next line if needed */
+}
+
+.main-container-p {
+    color: #717171;
+    margin-bottom: 20px;
 }
 
 .nav-container-btn3 {
@@ -110,79 +117,26 @@ ul a {
     background-color: #4CAF4F;
 }
 
-.main-container-body {
-    display: flex;
-    margin: auto;
-    padding: 84px 0 0;
-    height: 599px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.main-container-forh1 {
-    font-size: 64px;
-    max-width: 657px;
-    margin: 0;
-}
-
-.main-container-secondh1 {
-    color: #4CAF4F;
-    font-size: 64px;
-    margin: 0;
-}
-
-.main-container-p {
-    color: #717171;
-}
-
 .profile-img {
-    width: 407px; height: 407px;
+    max-width: 400px; /* Use max-width to allow shrinking */
+    width: 100%;
+    height: auto;     /* Maintain aspect ratio */
 }
 
 .main-container-circles {
-    position: absolute;
-    display: flex;
-    bottom: 0;
+    display: none; /* Hiding these as they can complicate responsive layout */
 }
 
-.main-container-circle1 {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    opacity: 50%;
-    border-radius: 50%;
-    background-color: #4CAF4F;
-}
-
-.main-container-circle2 {
-    position: absolute;
-    left: -20px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #4CAF4F;
-}
-
-.main-container-circle3 {
-    position: absolute;
-    left: 20px;
-    width: 10px;
-    height: 10px;
-    opacity: 50%;
-    border-radius: 50%;
-    background-color: #4CAF4F;
-}
-
-/* OUR CLIENTS PAGE CSS */
-
+/* === ABOUT ME / OUR CLIENTS SECTION === */
 .ourclients-container-text {
     text-align: center;
+    padding: 40px 0 20px;
 }
 
 .ourclients-container-h1 {
     color: #4D4D4D;
     font-size: 36px;
-    margin: 40px auto 0;
+    margin: 0 auto;
     max-width: 540px;
 }
 
@@ -193,17 +147,13 @@ ul a {
 
 .ourclients-container-logos {
     display: flex;
-    margin: 50px 0;
-    justify-content: space-around;
+    margin: 30px 0;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow logos to wrap */
 }
 
-.reactlogo,
-.html5logo,
-.csslogo,
-.gitlogo,
-.githublogo,
-.javascriptlogo,
-.vercellogo {
+.reactlogo, .html5logo, .csslogo, .gitlogo, .githublogo, .javascriptlogo, .vercellogo {
     width: 40px;
 }
 
@@ -211,11 +161,15 @@ ul a {
     margin: 50px auto;
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap */
 }
 
 .ourclients-container-group {
     box-shadow: 0px 2px 4px 0px #ABBED133;
+    padding: 20px;
+    flex-basis: 300px; /* Give a base width to each card */
 }
 
 .ourclients-container-group-h1 {
@@ -225,39 +179,27 @@ ul a {
     max-width: 220px;
 }
 
-.ourclients-container-group-p1 {
+.ourclients-container-group p {
     color: #717171;
     font-size: 14px;
-    max-width: 248px;
+    max-width: 250px;
+    margin: 10px auto;
 }
 
-.ourclients-container-group-p2 {
-    color: #717171;
-    font-size: 14px;
-    max-width: 229px;
-}
-
-
-/* FOURTH PAGE */
+/* === SKILLS / FOURTH PAGE === */
 .fourth-container-body {
     display: flex;
-    height: 288px;
+    padding: 60px 0;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .fourth-container-h1 {
-    /* color: #4D4D4D; */
     color: #4CAF4F;
     font-size: 36px;
-    /* max-width: 600px; */
 }
-
-/* 
-.fourth-container-secondh1 {
-    color: #4CAF4F;
-    font-size: 36px;
-} */
 
 .fourth-container-p {
     color: #18191F;
@@ -267,50 +209,38 @@ ul a {
     display: flex;
     max-width: 540px;
     flex-wrap: wrap;
-    margin: 40px 0;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .fourth-container-icon {
     display: flex;
     width: 255px;
-    margin: 10px 0;
-    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 
-.commitlogo,
-.openbooklogo,
-.projectscompletedlogo,
-.coretechnologieslogo {
+.commitlogo, .openbooklogo, .projectscompletedlogo, .coretechnologieslogo {
     width: 48px;
-}
-
-.fourth-container-icon-text {
-    width: 191px;
 }
 
 .fourth-container-icon-text a {
     text-decoration: none;
+    color: inherit;
 }
 
-.fourth-container-icon-h1 {
+.fourth-container-icon-h1, .fourth-container-icon-p {
     margin: 0;
 }
 
-.fourth-container-icon-p {
-    margin: 0;
-}
-
-
-/* SEVENTH PAGE CSS */
+/* === PROJECTS / SEVENTH PAGE === */
 .seventh-container-body {
-    /* height: 506px; */
     margin: 50px auto;
 }
 
 .seventh-container-body-heading {
     text-align: center;
-    margin: 16px auto;
+    margin: 16px auto 40px;
 }
 
 .seventh-container-h1 {
@@ -323,68 +253,47 @@ ul a {
 .seventh-container-p1 {
     color: #717171;
     font-weight: 400;
-    width: 608px;
+    width: 100%;
+    max-width: 608px;
     margin: 10px auto 0;
 }
 
-
-
-/* === Travel Card Slider Section (7th Page) === */
-/* .seventh-container {
-  margin: auto;
-  justify-content: space-between;
-  align-items: stretch;
- equal height cards
-  gap: 20px;
-  flex-wrap: wrap;
-} */
-
-
-
-/* Main container to hold the two cards */
 .seventh-container {
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch; /* Make cards same height */
     gap: 2rem;
-    /* Space between the two cards */
+    flex-wrap: wrap; /* Allow cards to wrap */
 }
 
-/* Container for an individual slider card */
 .slider-container {
-    width: calc(50% - 1rem);
+    width: 100%;
+    max-width: 550px; /* Set a max-width for each card */
+    flex-grow: 1; /* Allow cards to grow */
     border-radius: 0.75rem;
-    /* Slightly larger radius */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Ensures content respects the border radius */
 }
 
-/* Wrapper for the image slider part */
 .slider-image-area {
     position: relative;
     overflow: hidden;
 }
 
-/* Wrapper that moves to create the sliding effect */
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-/* Styling for the images within the slider */
 .slider-wrapper img {
     width: 100%;
     flex-shrink: 0;
     display: block;
 }
 
-/* Common styles for the previous and next buttons */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -406,24 +315,13 @@ ul a {
     font-size: 1.25rem;
 }
 
-/* Show buttons when hovering over the image area */
 .slider-image-area:hover .slider-btn {
     opacity: 1;
 }
 
-.slider-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
+.prev-btn { left: 0.5rem; }
+.next-btn { right: 0.5rem; }
 
-.prev-btn {
-    left: 0.5rem;
-}
-
-.next-btn {
-    right: 0.5rem;
-}
-
-/* Container for the navigation dots */
 .dots-container {
     position: absolute;
     bottom: 1rem;
@@ -434,12 +332,10 @@ ul a {
     gap: 0.5rem;
 }
 
-/* Styling for the individual navigation dots */
 .dot {
     height: 10px;
     width: 10px;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease;
     border-radius: 9999px;
     cursor: pointer;
     border: none;
@@ -447,22 +343,20 @@ ul a {
 }
 
 .dot.active {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
 }
-
-/* --- New Styles for the Card Body --- */
 
 .slider-body {
     padding: 1.5rem;
     border-top: 1px solid #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes body take available space */
 }
 
 .slider-body h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem;
     font-size: 1.5rem;
-    font-weight: 600;
-    color: #111827;
 }
 
 .description {
@@ -470,8 +364,7 @@ ul a {
     color: #6b7280;
     line-height: 1.5;
     margin-bottom: 1rem;
-    min-height: 40px;
-    /* Gives a consistent height */
+    flex-grow: 1; /* Pushes links to the bottom */
 }
 
 .tech-stack {
@@ -487,25 +380,23 @@ ul a {
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.75rem;
-    font-weight: 500;
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
 
 .link-btn {
     flex-grow: 1;
-    /* Makes buttons take equal space */
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    font-weight: 600;
     text-align: center;
     transition: all 0.2s ease-in-out;
-    border: 1px solid transparent;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #111827;
 }
 
 .link-btn.live-demo {
@@ -513,35 +404,13 @@ ul a {
     color: #ffffff;
 }
 
-.link-btn.live-demo:hover {
-    background-color: #374151;
-}
-
-.link-btn {
-    background-color: #ffffff;
-    color: #111827;
-    border-color: #d1d5db;
-}
-
-.link-btn:hover {
-    background-color: #f9fafb;
-    border-color: #9ca3af;
-}
-
-
-
-
-
-
-
-/* EIGHTH PAGE CSS */
+/* === CONTACT / EIGHTH PAGE === */
 .eighth-container-body {
-    height: 300px;
+    padding: 80px 0;
     text-align: center;
 }
 
 .eighth-container-p1 {
-    /* width: 840px; */
     margin: auto;
     font-size: 64px;
     line-height: 1.2;
@@ -576,24 +445,9 @@ ul a {
     width: 35px;
 }
 
-
-
-
-/* FOOTER(NINTH) PAGE CSS */
+/* === FOOTER === */
 .footer-container-color {
     background-color: rgba(38, 50, 56, 1);
-}
-
-.footer-container-body {
-    height: 328px;
-}
-
-
-.footer-githublogo,
-.footer-linkdinlogo,
-.footer-instagramlogo,
-.footer-twitterxlogo {
-    width: 32px;
 }
 
 footer {
@@ -601,21 +455,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 30px 10px;
-    font-family: Arial, sans-serif;
 }
 
-footer p {
-    font-size: 14px;
-}
 .jblogo-footer {
     color: #C82624;
     font-size: 36px;
     font-family: BatmanForeverAlternate;
-    font-weight: bold;
     margin: 10px auto;
-    letter-spacing: 2px;
 }
-
 
 footer .social-icons {
     padding: 15px 0;
@@ -624,11 +471,115 @@ footer .social-icons {
 footer .social-icons a {
     display: inline-block;
     margin: 0 8px;
-    font-size: 28px;
-    color: #fff;
-    transition: 0.3s;
+}
+.footer-githublogo, .footer-linkdinlogo, .footer-instagramlogo, .footer-twitterxlogo {
+    width: 32px;
 }
 
-footer .social-icons a:hover {
-    color: #c62828;
+
+/*
+========================================
+    RESPONSIVE STYLES (MEDIA QUERIES)
+========================================
+*/
+
+/* === TABLET & SMALLER DESKTOPS (<= 1024px) === */
+@media (max-width: 1024px) {
+    .main-container-body,
+    .fourth-container-body,
+    .ourclients-container-groups,
+    .seventh-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fourth-container-body {
+        align-items: center;
+    }
+
+    .fourth-container-icons {
+        justify-content: center;
+    }
+
+    .main-container-forh1 {
+        font-size: 50px;
+    }
+
+    .eighth-container-p1 {
+        font-size: 48px;
+    }
+
+    .main-container-body {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/* === MOBILE DEVICES (<= 768px) === */
+@media (max-width: 768px) {
+    /* --- NAVIGATION --- */
+    .nav-container-link, .nav-linkedin-btn {
+        display: none; /* Hide nav links and button */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-container {
+        justify-content: space-between; /* Adjust alignment for logo and hamburger */
+    }
+
+    .nav-container-link.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 84px; /* Position below navbar */
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* background-color: #f5f7fa; */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 10px 0;
+    }
+
+    .nav-container-link.show a {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* --- HERO SECTION --- */
+    .main-container-body {
+        flex-direction: column-reverse; /* Put image on top */
+    }
+
+    .profile-img {
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .main-container-forh1 {
+        font-size: 36px;
+    }
+
+    /* --- OTHER SECTIONS --- */
+    .ourclients-container-h1,
+    .fourth-container-h1,
+    .seventh-container-h1 {
+        font-size: 28px;
+    }
+
+    .eighth-container-p1 {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+
+    .ourclients-container-logos {
+        gap: 20px;
+    }
 }
