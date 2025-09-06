@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://bhatujay.github.io" target="_blank">
-    <img src="assets/BhatuJay.png" alt="Live Portfolio Preview" width="200" />
+    <img src="assets/BhatuJay.png" title="BhatuJay" alt="Live Portfolio Preview" width="200" />
   </a>
 </p>
 
