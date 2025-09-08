@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW4FF3SMKJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HW4FF3SMKJ');
+    </script>
+
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,7 +24,15 @@
     <title>BhatuJay - Portfolio</title>
 
     <!-- ✅ SEO Meta Tags -->
-    <meta name="description" content="BhatuJay - Portfolio, Projects, Skills, and Contact Information.">
+    <meta name="description"
+        content="Hi, I'm BhatuJay — a frontend developer specializing in React, JavaScript, and building beautiful, user-friendly web experiences. Explore my projects, skills, and portfolio.">
+    <meta name="keywords"
+        content="BhatuJay, JayBhatu, Bhatu Jay, Jay Bhatu, bhatujay, jaybhatu, bhatu jay, jay bhatu, ReactJS, Web Developer, Portfolio, GitHub" />
+    <meta name="author" content="BhatuJay" />
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bhatujay.github.io/">
 
     <!-- ✅ Open Graph Tags (for Google, Facebook, LinkedIn) -->
     <meta property="og:title" content="BhatuJay - Portfolio">
@@ -33,11 +51,45 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "BhatuJay",
-            "url": "https://bhatujay.github.io",
-            "image": "https://bhatujay.github.io/assets/BhatuJay.png",
-            "description": "Portfolio of BhatuJay showcasing web development projects and skills."
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "name": "BhatuJay",
+                    "alternateName": "Bhatu Jay",
+                    "url": "https://bhatujay.github.io",
+                    "image": "https://bhatujay.github.io/assets/BhatuJay.png",
+                    "description": "Portfolio of BhatuJay Frontend developer specializing in React and creating beautiful user experiences, showcasing web development projects and skills.",
+                    "sameAs": [
+                        "https://github.com/BhatuJay",
+                        "https://www.linkedin.com/in/jay-bhatu",
+                        "https://instagram.com/jay_bhatu_2135",
+                        "https://x.com/AhirBhatuJay",
+                        "https://www.youtube.com/@Bhatujay"
+                        ]
+                },
+                {
+                    "@type": "WebSite",
+                    "url": "https://bhatujay.github.io",
+                    "name": "BhatuJay Portfolio",
+                    "alternateName": "Bhatu Jay Portfolio",
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://bhatujay.github.io/?q={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                        }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://bhatujay.github.io"
+                        }
+                    ]
+                }
+            ]
         }
     </script>
 

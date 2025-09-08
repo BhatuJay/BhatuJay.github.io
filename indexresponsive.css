@@ -77,6 +77,13 @@ ul a {
     display: none; /* Hide by default on desktop */
     font-size: 30px;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active {
+    transform: rotate(90deg);
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* === HERO SECTION (HOME) === */
@@ -525,6 +532,7 @@ footer .social-icons a {
 
     .hamburger {
         display: block; /* Show hamburger icon */
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .nav-container {

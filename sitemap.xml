@@ -5,10 +5,123 @@
   <!-- Homepage -->
   <url>
     <loc>https://bhatujay.github.io/</loc>
+    <lastmod>2025-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/BhatuJay.png</image:loc>
-      <image:caption>BhatuJay Profile</image:caption>
-      <image:title>BhatuJay</image:title>
+      <image:title>BhatuJay Portfolio</image:title>
+      <image:caption>A profile picture of BhatuJay, frontend React developer.</image:caption>
     </image:image>
   </url>
+
+  <!-- About Me / Technologies Section -->
+  <url>
+    <loc>https://bhatujay.github.io/#about_me</loc>
+    <lastmod>2025-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/react-color.svg</image:loc>
+      <image:title>React.js Logo</image:title>
+      <image:caption>React.js - Frontend library used by BhatuJay in web development projects.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/html5-color.svg</image:loc>
+      <image:title>HTML5 Logo</image:title>
+      <image:caption>HTML5 - Core markup language for structuring BhatuJay’s portfolio and projects.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/css-color.svg</image:loc>
+      <image:title>CSS3 Logo</image:title>
+      <image:caption>CSS3 - Styling technology used in BhatuJay’s responsive portfolio.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/javascript-color.svg</image:loc>
+      <image:title>JavaScript Logo</image:title>
+      <image:caption>JavaScript - Programming language used for dynamic features in BhatuJay’s projects.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/git-color.svg</image:loc>
+      <image:title>Git Logo</image:title>
+      <image:caption>Git - Version control system used by BhatuJay for managing source code.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/github-color.svg</image:loc>
+      <image:title>GitHub Logo</image:title>
+      <image:caption>GitHub - Code hosting platform where BhatuJay shares projects.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/vercel-color.svg</image:loc>
+      <image:title>Vercel Logo</image:title>
+      <image:caption>Vercel - Deployment platform used by BhatuJay for hosting React projects.</image:caption>
+    </image:image>
+
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://bhatujay.github.io/#Skills</loc>
+    <lastmod>2025-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://bhatujay.github.io/#Projects</loc>
+    <lastmod>2025-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+    <!-- React Posts Project -->
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/React_posts_home.png</image:loc>
+      <image:title>React Posts - Home Page</image:title>
+      <image:caption>Dynamic posts portal built with React and Redux Toolkit - Home page view</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/React_posts_details.png</image:loc>
+      <image:title>React Posts - Details Page</image:title>
+      <image:caption>Detailed post view in the React Posts project</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/React_posts_add_edit.png</image:loc>
+      <image:title>React Posts - Add/Edit Page</image:title>
+      <image:caption>Add or edit posts in the React Posts project</image:caption>
+    </image:image>
+
+    <!-- Expense Tracker Project -->
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/expense_tracker_home.png</image:loc>
+      <image:title>Expense Tracker - Dashboard</image:title>
+      <image:caption>Dashboard showing expenses in the Expense Tracker app</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/expense_tracker_add_edit.png</image:loc>
+      <image:title>Expense Tracker - Add/Edit Entry</image:title>
+      <image:caption>Add or edit expense records in the Expense Tracker app</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bhatujay.github.io/assets/ProjectsImg/expense_tracker_pie_chart.png</image:loc>
+      <image:title>Expense Tracker - Pie Chart</image:title>
+      <image:caption>Pie chart visualization of expenses in the Expense Tracker app</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://bhatujay.github.io/#Contact</loc>
+    <lastmod>2025-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

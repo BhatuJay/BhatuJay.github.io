@@ -151,7 +151,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- Function to toggle the mobile navigation menu ---
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-container-link');
+    const menuIcon = document.querySelector('.hamburger');
     navLinks.classList.toggle('show');
+
+    // Toggle icon between ☰ and ✖
+    if (menuIcon.textContent.trim() === "☰") {
+        menuIcon.textContent = "✖";
+    } else {
+        menuIcon.textContent = "☰";
+    }
+
+    // Add class to trigger CSS transition
+    menuIcon.classList.toggle('active');
 }
 
 // Dynamically set the copyright year
