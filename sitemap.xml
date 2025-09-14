@@ -1,86 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Homepage -->
   <url>
     <loc>https://bhatujay.github.io/</loc>
-    <lastmod>2025-09-08</lastmod>
+    <lastmod>2025-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+
+    <!-- Profile Image -->
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/BhatuJay.png</image:loc>
-      <image:title>BhatuJay Portfolio</image:title>
-      <image:caption>A profile picture of BhatuJay, frontend React developer.</image:caption>
+      <image:title>Bhatu Jay Portfolio</image:title>
+      <image:caption>A profile picture of Bhatu Jay, frontend React developer.</image:caption>
     </image:image>
-  </url>
 
-  <!-- About Me / Technologies Section -->
-  <url>
-    <loc>https://bhatujay.github.io/#about_me</loc>
-    <lastmod>2025-09-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-
+    <!-- About Me / Technologies Section -->
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/react-color.svg</image:loc>
       <image:title>React.js Logo</image:title>
-      <image:caption>React.js - Frontend library used by BhatuJay in web development projects.</image:caption>
+      <image:caption>React.js - Frontend library used by Bhatu Jay in web development projects.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/html5-color.svg</image:loc>
       <image:title>HTML5 Logo</image:title>
-      <image:caption>HTML5 - Core markup language for structuring BhatuJay’s portfolio and projects.</image:caption>
+      <image:caption>HTML5 - Core markup language for structuring Bhatu Jay's portfolio and projects.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/css-color.svg</image:loc>
       <image:title>CSS3 Logo</image:title>
-      <image:caption>CSS3 - Styling technology used in BhatuJay’s responsive portfolio.</image:caption>
+      <image:caption>CSS3 - Styling technology used in Bhatu Jay's responsive portfolio.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/javascript-color.svg</image:loc>
       <image:title>JavaScript Logo</image:title>
-      <image:caption>JavaScript - Programming language used for dynamic features in BhatuJay’s projects.</image:caption>
+      <image:caption>JavaScript - Programming language used for dynamic features in Bhatu Jay's projects.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/git-color.svg</image:loc>
       <image:title>Git Logo</image:title>
-      <image:caption>Git - Version control system used by BhatuJay for managing source code.</image:caption>
+      <image:caption>Git - Version control system used by Bhatu Jay for managing source code.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/github-color.svg</image:loc>
       <image:title>GitHub Logo</image:title>
-      <image:caption>GitHub - Code hosting platform where BhatuJay shares projects.</image:caption>
+      <image:caption>GitHub - Code hosting platform where Bhatu Jay shares projects.</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/vercel-color.svg</image:loc>
       <image:title>Vercel Logo</image:title>
-      <image:caption>Vercel - Deployment platform used by BhatuJay for hosting React projects.</image:caption>
+      <image:caption>Vercel - Deployment platform used by Bhatu Jay for hosting React projects.</image:caption>
     </image:image>
 
-  </url>
-
-  <!-- Skills -->
-  <url>
-    <loc>https://bhatujay.github.io/#Skills</loc>
-    <lastmod>2025-09-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Projects -->
-  <url>
-    <loc>https://bhatujay.github.io/#Projects</loc>
-    <lastmod>2025-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-
+    <!-- Projects -->
     <!-- React Posts Project -->
     <image:image>
       <image:loc>https://bhatujay.github.io/assets/ProjectsImg/React_posts_home.png</image:loc>
@@ -114,14 +93,6 @@
       <image:title>Expense Tracker - Pie Chart</image:title>
       <image:caption>Pie chart visualization of expenses in the Expense Tracker app</image:caption>
     </image:image>
-  </url>
-
-  <!-- Contact -->
-  <url>
-    <loc>https://bhatujay.github.io/#Contact</loc>
-    <lastmod>2025-09-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
